@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color: #FBDCDC;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vw 2vw; 
+}
+
+.navbar-item, a{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item img{
+    width: 100%;
+}
+
+.navbar-item h1{
+    font-family: 'Hubballi', cursive;
+    font-size: 8vw;
+}
+
+.navbar-menu{
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 2vw;
+    animation-name: navbar-menu;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    text-align: center;
+    font-family: 'Judson', serif;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@keyframes navbar-menu{
+    0%   {left:-200px;}
+    100% {left:0px;}
+}
+
+@keyframes navbar-menu-closure{
+    0%   {left:0px;}
+    100% {left:-200px;}
+}
+
+.navbar-menu h1{
+    color: white;
+    font-size: 5vw;
+    padding: 8vw;
+}
+
+.navbar-menu a{
+    padding: 5vw;
+    font-size: 4vw;
+}
+
+.navbar-menu a:hover{
+    color: cornflowerblue;
+}
+
+#close-navbar{
+    width: 20%;
+    color: white;
+}
+
+.preface img{
+    width: 100%;
+}
+
+.preface h1, h2{
+    font-size: 6vw;
+    text-align: center;
+    font-family: 'Judson', serif;
+    padding: 2vw 9vw;
+    font-weight: 400;
+}
+
+.preface h2{
+    font-size: 5.5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    border-bottom: 0.1vw solid black;
+}
+
+.services{
+    text-align: center;
+}
+
+.services h1{
+    text-align: center;
+    font-family: 'Judson', serif;
+    font-size: 7.5vw;
+    font-weight: 500;
+    padding-bottom: 4vw;
+    text-transform: capitalize;
+}
+
+.services-grid{
+    width: 100%;
+    display: grid;
+    grid-gap: 5vw;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 6vw;
+}
+
+.services-grid h1{
+    font-size: 4.1vw;
+}
+
+.services a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    border: 2.2vw solid black;
+    background-color: black;
+    font-family: 'Gugi', cursive;;
+    font-size: 4.5vw;
+    border-radius: 50px;
+}
+
+.services-bottom h1, h2{
+    padding-top: 7vw;
+    font-family: 'Judson', serif;
+    font-size: 5vw;
+    font-weight: 200;
+}
+
+.services-bottom h1{
+    font-size: 9vw;
+    font-weight: 400;
+}
+.bottom-body{
+    margin-top: 5vw;
+}
+
+.bottom-body img{
+    width: 100%;
+}
+
+.mail-tab{
+    text-align: center;
+    padding: 1vw;
+}
+
+.mail-tab h1{
+    font-weight: 200;
+    font-family: 'Jost', sans-serif;
+    font-size: 5vw;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 5vw;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    font-size: 5vw;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    font-size: 5vw;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center;
+    font-size: 5vw; 
+ }
+
+#mail-input{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 8vw;
+    background-color: #DBC0C0;
+    width: 80%;
+    padding-left: 20px;
+}
+#mail-submit{
+    background-color: black;
+    color:#ffffff;
+    padding: 1vw;
+    width: 20%;
+    border-radius: 20px;
+    font-family: 'Judson', serif;
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+
+.footer{
+    display: grid;
+    margin-top: 5vw;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.footer-item{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    background-color: black;
+}
+
+.footer-item h1, a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+}
+
+.footer-item h1{
+    font-size: 6vw;
+}
+
+.footer-item a{
+    font-size: 4vw;
+}
+
+.footer-item a:hover{
+    color: rgb(177, 131, 75);
+
+}
+
+#copyright{
+    padding-top: 4vw;
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+}
