@@ -2,6 +2,8 @@
 
 I have used mobile-first approach in this project.
 
+This website is compatible with phone screens, tablet screens and desktop or laptop screens.(responsive & cross-browser)
+
 I have not used any external libraries. (Plain HTML, CSS, JS Only.)
 
 I just wanted to create a charity website with cute puppy pictures, I hope you liked it.
