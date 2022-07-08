@@ -1,37 +1,39 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     height: 100%;
     background-color: #FBDCDC;
     overflow-x: hidden;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3vw 2vw; 
+    padding: 3vw 2vw;
+    position: sticky;
 }
 
-.navbar-item, a{
+.navbar-item,
+a {
     display: flex;
     justify-content: center;
 }
 
-.navbar-item img{
+.navbar-item img {
     width: 100%;
 }
 
-.navbar-item h1{
+.navbar-item h1 {
     font-family: 'Hubballi', cursive;
     font-size: 8vw;
 }
 
-.navbar-menu{
-    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+.navbar-menu {
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     display: none;
     position: absolute;
     background-color: #000000;
@@ -49,41 +51,52 @@ body{
     border-bottom-right-radius: 20px;
 }
 
-@keyframes navbar-menu{
-    0%   {left:-200px;}
-    100% {left:0px;}
+@keyframes navbar-menu {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }
 
-@keyframes navbar-menu-closure{
-    0%   {left:0px;}
-    100% {left:-200px;}
+@keyframes navbar-menu-closure {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -200px;
+    }
 }
 
-.navbar-menu h1{
+.navbar-menu h1 {
     color: white;
     font-size: 5vw;
     padding: 8vw;
 }
 
-.navbar-menu a{
+.navbar-menu a {
     padding: 5vw;
     font-size: 4vw;
 }
 
-.navbar-menu a:hover{
-    color: cornflowerblue;
+.navbar-menu a:hover {
+    color: rgb(177, 131, 75);
 }
 
-#close-navbar{
+#close-navbar {
     width: 20%;
     color: white;
 }
 
-.preface img{
+.preface img {
     width: 100%;
 }
 
-.preface h1, h2{
+.preface h1,
+h2 {
     font-size: 6vw;
     text-align: center;
     font-family: 'Judson', serif;
@@ -91,18 +104,18 @@ body{
     font-weight: 400;
 }
 
-.preface h2{
+.preface h2 {
     font-size: 5.5vw;
     padding-top: 5vw;
     padding-bottom: 5vw;
     border-bottom: 0.1vw solid black;
 }
 
-.services{
+.services {
     text-align: center;
 }
 
-.services h1{
+.services h1 {
     text-align: center;
     font-family: 'Judson', serif;
     font-size: 7.5vw;
@@ -111,55 +124,57 @@ body{
     text-transform: capitalize;
 }
 
-.services-grid{
+.services-grid {
     width: 100%;
     display: grid;
-    grid-gap: 5vw;
+    grid-gap: 2vw;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 6vw;
 }
 
-.services-grid h1{
+.services-grid h1 {
     font-size: 4.1vw;
 }
 
-.services a{
+.services a {
     display: inline;
     text-decoration: none;
     color: white;
     border: 2.2vw solid black;
     background-color: black;
-    font-family: 'Gugi', cursive;;
+    font-family: 'Gugi', cursive;
     font-size: 4.5vw;
     border-radius: 50px;
 }
 
-.services-bottom h1, h2{
+.services-bottom h1,
+h2 {
     padding-top: 7vw;
     font-family: 'Judson', serif;
     font-size: 5vw;
     font-weight: 200;
 }
 
-.services-bottom h1{
+.services-bottom h1 {
     font-size: 9vw;
     font-weight: 400;
 }
-.bottom-body{
+
+.bottom-body {
     margin-top: 5vw;
 }
 
-.bottom-body img{
+.bottom-body img {
     width: 100%;
 }
 
-.mail-tab{
+.mail-tab {
     text-align: center;
     padding: 1vw;
 }
 
-.mail-tab h1{
+.mail-tab h1 {
     font-weight: 200;
     font-family: 'Jost', sans-serif;
     font-size: 5vw;
@@ -168,24 +183,26 @@ body{
 ::-webkit-input-placeholder {
     text-align: center;
     font-size: 5vw;
- }
- 
- :-moz-placeholder { /* Firefox 18- */
-    text-align: center;
-    font-size: 5vw;  
- }
- 
- ::-moz-placeholder {  /* Firefox 19+ */
-    text-align: center;
-    font-size: 5vw;  
- }
- 
- :-ms-input-placeholder {  
-    text-align: center;
-    font-size: 5vw; 
- }
+}
 
-#mail-input{
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+    font-size: 5vw;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+    font-size: 5vw;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+    font-size: 5vw;
+}
+
+#mail-input {
     border: 1px solid black;
     border-radius: 20px;
     height: 8vw;
@@ -193,9 +210,10 @@ body{
     width: 80%;
     padding-left: 20px;
 }
-#mail-submit{
+
+#mail-submit {
     background-color: black;
-    color:#ffffff;
+    color: #ffffff;
     padding: 1vw;
     width: 20%;
     border-radius: 20px;
@@ -204,41 +222,241 @@ body{
     font-weight: 100;
 }
 
-.footer{
+.footer {
     display: grid;
     margin-top: 5vw;
     grid-template-columns: auto;
     text-align: center;
 }
 
-.footer-item{
+.footer-item {
     padding-top: 5vw;
     padding-bottom: 2vw;
     background-color: black;
 }
 
-.footer-item h1, a{
+.footer-item h1,
+a {
     color: white;
     text-decoration: none;
     font-family: 'Hubballi', cursive;
 }
 
-.footer-item h1{
+.footer-item h1 {
     font-size: 6vw;
 }
 
-.footer-item a{
+.footer-item a {
     font-size: 4vw;
 }
 
-.footer-item a:hover{
+.footer-item a:hover {
     color: rgb(177, 131, 75);
 
 }
 
-#copyright{
+#copyright {
     padding-top: 4vw;
     font-size: 3vw;
     background-color: black;
     color: white;
+    font-weight: 200;
+}
+
+/* Mobile Phones */
+
+@media only screen and (max-width: 540px) {
+    #navbar-desktop {
+        display: none;
+    }
+
+}
+
+
+/* For Tablets and Small Scaled Tablets */
+
+@media only screen and (min-width: 540px) and (max-width: 820px) {
+    #navbar-desktop {
+        display: none;
+    }
+}
+
+/* For Desktops and Laptops */
+
+@media only screen and (min-width: 820px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0.8vw;
+        border-bottom: 1px solid black;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    #navbar-desktop {
+        align-items: center;
+        font-size: 2vw;
+        gap: 3vw;
+    }
+
+    #navbar-desktop a {
+        color: black;
+    }
+    #navbar-desktop a:hover{
+        color: rgb(177, 131, 75);
+    }
+
+    #logo-text {
+        font-size: 2vw;
+    }
+
+    #preface-img {
+        height: 30vw;
+        border: 20vw;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .preface h1 {
+        position: absolute;
+        top: 20vw;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        color: white;
+        font-size: 4vw;
+    }
+
+    .preface h2 {
+        position: absolute;
+        top: 30vw;
+        font-size: 2vw;
+        border-bottom: 0vw;
+        left: 0;
+        right: 0;
+    }
+
+    .services {
+        background-color: rgb(255, 255, 255);
+        margin-top: 8vw;
+        padding-top: 3vw;
+        padding-bottom: 0vw;
+    }
+
+    .services h1{
+        font-size: 3vw;
+    }
+
+    .services img {
+        padding-top: 2vw;
+        width: 20vw;
+        height: auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services-grid h1{
+        font-size: 2vw;
+    }
+
+    .services-grid-item{
+        height: 30vw;
+        width: 30vw;
+        background-color: #FBDCDC;
+        border-radius: 10%;
+    }
+    .services-grid-item h1{
+        padding-top: 2vw;
+    }
+
+    .services a{
+        font-size: 1.5vw;
+    }
+    .services-bottom{
+        padding-top: 2vw;
+    }
+    .services-bottom h2{
+        font-size: 3vw;
+    }
+    .services-bottom h1{
+        font-size: 5vw;
+        padding-top: 2vw;
+        padding-bottom: 0;
+    }
+    .services-bottom h2{
+        font-size: 3vw;
+        padding-top: 1vw;
+        padding-bottom: 3vw;
+    }
+    .bottom-body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-top: 1.5vw;
+    }
+
+    .bottom-body img{
+        width: 30%;
+        border-radius: 10%;
+    }
+
+    .mail-tab h1{
+        font-size: 2vw;
+    }
+    #mail-input{
+        height: 4vw;
+        width: 100%;
+    }
+    ::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    :-moz-placeholder {
+        /* Firefox 18- */
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    :-ms-input-placeholder {
+        text-align: center;
+        font-size: 2vw;
+    }
+    #mail-submit{
+        font-size: 2vw;
+        width: 50%;
+        margin-bottom: 5vw;
+    }
+    .footer{
+        grid-template-columns: auto auto auto;
+    }
+    .footer-item{
+        padding-top: 2vw;
+    }
+    .footer-item h1{
+        padding-top: 1vw;
+        padding-bottom: 2vw;
+        font-size: 4vw;
+        font-weight: 200;
+    }
+    .footer-item ul li a{
+        font-size: 2vw;
+    }
+    #copyright{
+        text-align: center;
+        padding-bottom: 2vw;
+        font-size: 1.2vw;
+        font-weight: 200;
+    }
+
 }
